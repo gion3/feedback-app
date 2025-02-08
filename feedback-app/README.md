@@ -1,16 +1,25 @@
-1. In cadrul unui terminal, rulati npm install din folderul .\feedback-app
-2. In cadrul unui terminal, rulati npm install din folderul .\feedback-app\backend
-3. Pentru a porni server-ul, rulati comanda node .\server.js din folderul .\feedback-app\backend
-4. Pentru a rula aplicatia, rulati comanda npm start din folderul .\feedback-app
+#### Installation and Setup
 
-Functionalitati:
-- Aplicatia are interfete pentru studenti si profesori
-- Ca profesor, putem creea o activitate la o anumita data, cu o descriere si o durata, urmand ca aplicatia sa genereze un cod unic pt. aceasta activitate
-- Ca student, putem introduce codul activitatii si oferi feedback apasand unul din cele 4 emoticoane: happy, sad, surprised, confused)
-- Ca profesor, putem vizualiza feedback-ul in timp real, cat si un bar chart cu toate feedback-urile primite.
+1.  Open a terminal and run `npm install` in the `.\feedback-app` directory.
+2.  Open a terminal and run `npm install` in the `.\feedback-app\backend` directory.
+3.  To start the server, run the command `node .\server.js` from the `.\feedback-app\backend` directory.
+4.  To launch the application, run `npm start` from the `.\feedback-app` directory.
 
-Tehnologii utilizate:
-Front-end: React cu tailwindcss pt styling
-Back-end: Node + Express
-DB: SQLite + Sequelize ORM
+#### Features
 
+-   The application provides separate interfaces for students and professors.
+-   **Professor functionalities:**
+    -   Create an activity by specifying a date, description, and duration.
+    -   The application generates a unique code for each activity.
+-   **Student functionalities:**
+    -   Join an activity by entering the unique code.
+    -   Provide feedback by selecting one of four emoticons: **happy, sad, surprised, or confused**.
+-   **Real-time feedback visualization:**
+    -   Professors can monitor feedback in real time.
+    -   A bar chart displays all received feedback for better analysis.
+
+#### Technologies Used
+
+-   **Frontend:** React with Tailwind CSS for styling.
+-   **Backend:** Node.js with Express.
+-   **Database:** SQLite with Sequelize ORM.
